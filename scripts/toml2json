@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+
+from toml2json import main
+
+if __name__ == "__main__":
+    main("toml2json")

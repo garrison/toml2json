@@ -25,10 +25,13 @@ def json2toml(s):
     return toml.dumps(json.loads(s))
 
 
-def main():
-    if "toml2json" in sys.argv[0]:
+def main(cmd=None):
+    if cmd is None:
+        cmd = sys.argv[0]
+
+    if "toml2json" in cmd:
         func = toml2json
-    elif "json2toml" in sys.argv[0]:
+    elif "json2toml" in cmd:
         func = json2toml
     else:
         raise RuntimeError("Must be called either as `toml2json` or `json2toml`.")
