@@ -12,7 +12,9 @@ roundtrip properly.  After the toml => json => toml conversion, each
 ``datetime`` will be a string, just like when using the web service
 http://toml-to-json.matiaskorhonen.fi/
 
-More to come.
+~~More to come.~~
+
+EDIT: I no longer use this.  See https://github.com/dbohdan/remarshal for a replacement.
 
 .. _toml: https://github.com/toml-lang/toml
 .. _json: http://json.org/
